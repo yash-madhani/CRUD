@@ -11,8 +11,8 @@ function Users() {
 
     return (
         <div className='p-4 text-center bg-blue-600 h-screen'>
-            <div className='p-1 inline-block bg-white'>
-                <Link  className='p-2 text-white bg-blue-900' to='/create' >ADD+</Link>
+            <div className='p-1 inline-block bg-white rounded-md'>
+                <Link  className='p-2 text-white bg-blue-900 rounded-md m-2' to='/create' >ADD+</Link>
                 <table className='p-1 bg-white'>
                     <thead>
                         <tr className='text-center p-2 m-2'>
@@ -30,7 +30,7 @@ function Users() {
                                     <td>{users.Email}</td>
                                     <td>{users.Age}</td>
                                     <td>
-                                        <button className='p-2 bg-green-500 rounded-md m-3'>Update</button>
+                                        <Link className='p-2 bg-green-500 rounded-md m-3' to='/update' >Update</Link>
                                         <button className='p-2 bg-red-500 rounded-md m-3'>Delete</button>
                                     </td>
                                 </tr>
